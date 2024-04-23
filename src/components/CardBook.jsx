@@ -11,7 +11,7 @@ const CardBook = ({ book }) => {
       <p className='card-synopsis'>{book.synopsis}</p>
       <p className='card-year'>{book.year}</p>
       <img className='card-cover' src={book.cover} alt={book.title} />
-      <Button />
+      <Button book={book} />
     </div>
   );
 };
