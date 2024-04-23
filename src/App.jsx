@@ -1,4 +1,4 @@
-import BookList from "./components/BookList.jsx"
+import BookList from "./components/BookList.jsx";
 
 function App() {
 
