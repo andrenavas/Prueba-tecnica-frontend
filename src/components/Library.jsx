@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getBooks } from "../api/booksAPI";
 import CardBook from "./CardBook";
 
-const BookList = () => {
+const Library = () => {
 
   const { isLoading, data: response, isError, error } = useQuery({
     queryKey: ['books'],
@@ -21,4 +21,4 @@ const BookList = () => {
   )
 }
 
-export default BookList;
+export default Library;

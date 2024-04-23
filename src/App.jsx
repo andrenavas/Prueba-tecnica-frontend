@@ -1,6 +1,6 @@
 import Library from "./components/Library.jsx";
-import Button from "./components/Button.jsx";
 import './index.css';
+import BookList from "./components/BookList.jsx";
 
 function App() {
 
@@ -8,8 +8,12 @@ function App() {
   return (
     <div>
       <h1>Developers working...</h1>
-      <Library />
-      <Button/>
+      <div className="library-content">
+        <Library />
+      </div>
+      <div className="booklist-conten">
+        <BookList />
+      </div>
     </div>
   )
 }
