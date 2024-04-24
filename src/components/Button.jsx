@@ -1,16 +1,13 @@
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-
-import { addBookList } from '../api/booksAPI';
+import { addBook } from '../redux/bookReducer';
 
 const Button = ({ book }) => {
+    const dispatch = useDispatch();
+
     const handleClick = () => {
-        addBookList(book)
-            .then(() => {
-                alert('Libro agregado a tu lista');
-            })
-            .catch((error) => {
-                alert('Error: ' + error.message);
-            });
+        dispatch(addBook(book)); // Despacha la acción para agregar el libro a la lista
+        alert('Libro agregado a tu lista');
     };
 
     return (
@@ -25,3 +22,4 @@ export default Button;
 Button.propTypes = {
     book: PropTypes.object.isRequired, // Validación de la propiedad book
 };
+
