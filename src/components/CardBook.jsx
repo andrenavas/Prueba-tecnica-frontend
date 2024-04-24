@@ -5,7 +5,7 @@ import Button from "./Button";
 const CardBook = ({ book }) => {
 
   if (!book) {
-    return null; // Otra acción, como un mensaje de error o carga
+    return null;
   }
   return (
     <div className='rounded-xl shadow-lg w-[260px] flex items-center justify-center text-left p-5 bg-gray-100' >
@@ -16,8 +16,6 @@ const CardBook = ({ book }) => {
         <h3 className=' text-l font-semibold'>{book.title}</h3>
         <p className='text-sm'>Género:{book.genre}</p>
         <p className='text-sm font-light'>{book.synopsis}</p>
-
-
         <Button book={book} />
       </div>
     </div>
