@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="bg-white text-black duration-200 relative z-40">
       {/* upper Navbar */}
       <div className="bg-primary py-2">
-        <p> Announcement bar</p>
+        <p className="text-sm text-center font-light"> Únete a nuestra comunidad de lectores 📖</p>
       </div>
       <div className="bg-secondary py-2">
         <div className="container flex justify-between items-center p-5">

@@ -8,7 +8,7 @@ const CardBook = ({ book }) => {
     return null; // Otra acción, como un mensaje de error o carga
   }
   return (
-    <div className='rounded-xl shadow-lg w-[260px] flex items-center justify-center text-left p-5' >
+    <div className='rounded-xl shadow-lg w-[260px] flex items-center justify-center text-left p-5 bg-gray-100' >
       <div className='p-5 flex flex-col  gap-3'>
         <div className='rounded-xl'>
           <img className='h-60 w-auto object-conver rounded-xl' src={book.cover} alt={book.title} />
