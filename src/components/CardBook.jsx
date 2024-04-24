@@ -4,13 +4,16 @@ import Button from "./Button";
 
 const CardBook = ({ book }) => {
 
+  if (!book) {
+    return null; // Otra acción, como un mensaje de error o carga
+  }
   return (
     <div className='card-book'>
-      <h3 className='card-title'>{book.title}</h3>
-      <p className='card-genre'>{book.genre}</p>
+      <h3 className='font-semibold'>{book.title}</h3>
+      <p className='text-sm text-gray-600'>{book.genre}</p>
       <p className='card-synopsis'>{book.synopsis}</p>
-      <p className='card-year'>{book.year}</p>
-      <img className='card-cover' src={book.cover} alt={book.title} />
+      <p className='text-yellow-400'>{book.year}</p>
+      <img className='h-[220px] w-[150px] object-conver-rounded-md' src={book.cover} alt={book.title} />
       <Button book={book} />
     </div>
   );
