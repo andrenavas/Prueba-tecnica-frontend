@@ -9,7 +9,6 @@ function App() {
   return (
     <div>
       <NavBar />
-      <h1>LIBRERIA...</h1>
       <div className="library-content">
         <Library />
       </div>

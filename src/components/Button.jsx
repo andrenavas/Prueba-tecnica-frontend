@@ -6,8 +6,8 @@ const Button = ({ book }) => {
     const dispatch = useDispatch();
 
     const handleClick = () => {
+        console.log("Botón 'Agregar a mi lista' clickeado");
         dispatch(addBook(book)); // Despacha la acción para agregar el libro a la lista
-        alert('Libro agregado a tu lista');
     };
 
     return (
