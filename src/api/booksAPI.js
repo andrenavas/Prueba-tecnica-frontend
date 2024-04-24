@@ -5,10 +5,15 @@ const bookApi = axios.create({
 })
 
 export const getBooks = async () => {
-   const response = await bookApi.get();
-return response.data;
-}
-
+    try {
+      const response = await bookApi.get();
+      console.log("Respuesta de la API en getBooks:", response.data);
+      return response.data;
+    } catch (error) {
+      console.error("Error al obtener los libros:", error);
+      throw error;
+    }
+ }
 // export const addBookList = (book) => {
 //     bookApi.post(book);
     
