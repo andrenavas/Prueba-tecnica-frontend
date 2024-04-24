@@ -8,13 +8,18 @@ const CardBook = ({ book }) => {
     return null; // Otra acción, como un mensaje de error o carga
   }
   return (
-    <div className='card-book'>
-      <h3 className='font-semibold'>{book.title}</h3>
-      <p className='text-sm text-gray-600'>{book.genre}</p>
-      <p className='card-synopsis'>{book.synopsis}</p>
-      <p className='text-yellow-400'>{book.year}</p>
-      <img className='h-[220px] w-[150px] object-conver-rounded-md' src={book.cover} alt={book.title} />
-      <Button book={book} />
+    <div className='rounded-xl shadow-lg w-[260px] flex items-center justify-center text-left p-5 bg-gray-100' >
+      <div className='p-5 flex flex-col  gap-3'>
+        <div className='rounded-xl'>
+          <img className='h-60 w-auto object-conver rounded-xl' src={book.cover} alt={book.title} />
+        </div>
+        <h3 className=' text-l font-semibold'>{book.title}</h3>
+        <p className='text-sm'>Género:{book.genre}</p>
+        <p className='text-sm font-light'>{book.synopsis}</p>
+
+
+        <Button book={book} />
+      </div>
     </div>
   );
 };

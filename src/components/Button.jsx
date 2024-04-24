@@ -11,8 +11,8 @@ const Button = ({ book }) => {
     };
 
     return (
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleClick}>
-            Agregar a mi lista
+        <button className="bg-tertiary w-auto py-1 px-5 rounded-full text-gray-50 font-bold" onClick={handleClick}>
+            Agregar
         </button>
     );
 }
