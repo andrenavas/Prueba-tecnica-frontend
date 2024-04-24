@@ -10,7 +10,7 @@ export default {
             tertiary: "#3f8363", 
         },
         fontFamily: {
-            sans: ['"Poppins"', 'sans-serif'],
+            sans: ['Poppins', 'sans-serif'],
         },
         textColor: {
             DEFAULT: "#333333",

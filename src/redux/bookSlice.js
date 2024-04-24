@@ -31,20 +31,13 @@ export const selectFilteredBooks = (state) => {
     return state.books.books;
   }
 
-  // const filteredBooks = state.books.books.filter(book => {
-  //   console.log("Entrando a la función de filtro");
-  //   return book.genre === selectedGenre;
-  // });
+
   const filteredBooks = state.books.books.filter(book => {
     const normalizedGenre = book.genre.toLowerCase().trim();
     const normalizedSelectedGenre = selectedGenre.toLowerCase().trim();
     return normalizedGenre === normalizedSelectedGenre;
   });
-  // const filteredBooks = state.books.books.filter(book => {
-  //   console.log("Género del libro:", book.genre);
-  //   console.log("Género seleccionado:", selectedGenre);
-  //   return book.genre.toLowerCase() === selectedGenre.toLowerCase();
-  // });
+
   console.log("Libros filtrados:", filteredBooks);
   return filteredBooks;
 };
